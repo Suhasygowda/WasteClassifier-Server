@@ -1,0 +1,7 @@
+EOF
+__pycache__/
+*.pyc
+.venv/
+uploads/
+.env
+EOF
