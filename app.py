@@ -468,9 +468,12 @@ app = Flask(__name__)
 # Enable CORS
 CORS(app, resources={
     r"/*": {
-        "origins": "*",
+        "origins": [
+            "http://localhost:5173",
+            "https://waste2-three.vercel.app"
+        ],
         "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
+        "allow_headers": ["Content-Type", "Authorization"]
     }
 })
 
